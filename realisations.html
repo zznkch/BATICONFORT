@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baticonfort - Nos Réalisations en Plâtrerie</title>
+    <meta name="description" content="Découvrez nos réalisations en plâtrerie : cloisons, faux plafonds, enduits décoratifs, isolation et rénovations complètes.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation mise à jour avec toutes les pages -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.jpg" alt="Logo Baticonfort" class="logo-image">
+            <span class="logo-text">BATICONFORT</span>
+        </a>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+            <li><a href="realisations.html"><i class="fas fa-images"></i> Réalisations</a></li>
+            <li><a href="equipe.html"><i class="fas fa-users"></i> Équipe</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="certifications.html"><i class="fas fa-award"></i> Certifications</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Nos Réalisations</h1>
+            <p>Découvrez nos chantiers de plâtrerie et rénovation</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Galerie de Chantiers</h2>
+            <p class="section-subtitle">Plus de 100 chantiers réalisés avec expertise et passion</p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tous nos travaux</button>
+                <button class="filter-btn" data-filter="cloisons">Cloisons</button>
+                <button class="filter-btn" data-filter="plafonds">Plafonds</button>
+                <button class="filter-btn" data-filter="enduits">Enduits & Décoration</button>
+                <button class="filter-btn" data-filter="renovation">Rénovation complète</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Cloisons -->
+                <div class="portfolio-item" data-category="cloisons">
+                    <img src="assets/images/chantier1.jpg" alt="Installation de cloisons dans un appartement" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h4>Cloisons de distribution</h4>
+                        <p>Appartement 85m² - Paris 15ème - 2023</p>
+                        <p>Création de 3 nouvelles pièces avec cloisons alvéolaires</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="cloisons">
+                    <img src="assets/images/chantier2.jpg" alt="Doublage de mur avec isolation" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h4>Doublage avec isolation</h4>
+                        <p>Maison individuelle - Yvelines - 2022</p>
+                        <p>Doublage des murs périphériques avec isolation thermique</p>
+                    </div>
+                </div>
+                
+                <!-- Plafonds -->
+                <div class="portfolio-item" data-category="plafonds">
+                    <img src="assets/images/plafond-decoration.jpg" alt="Faux plafond décoratif avec spots intégrés" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h4>Plafond décoratif avec spots</h4>
+                        <p>Salon de 40m² - Neuilly-sur-Seine - 2023</p>
+                        <p>Plafond suspendu avec intégration d'éclairage LED</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="plafonds">
+                    <img src="assets/images/plafond-acoustique.jpg" alt="Plafond acoustique de bureau" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h4>Plafond acoustique de bureau</h4>
+                        <p>Bureaux de 200m² - La Défense - 2022</p>
+                        <p>Installation de plafonds phoniques pour open space</p>
+                    </div>
+                </div>
+                
+                <!-- Enduits & Décoration -->
+                <div class="portfolio-item" data-category="enduits">
+                    <img src="assets/images/chantier3.jpg" alt="Enduit lissé sur mur" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h4>Enduit lissé parfait</h4>
+                        <p>Appartement rénové - Paris 10ème - 2023</p>
+                        <p>Enduit traditionnel au plâtre pour des murs parfaitement lisses</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="enduits">
+                    <img src="assets/images/chantier4.jpg" alt="Corniches et moulures en staff" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h4>Corniches et moulures classiques</h4>
+                        <p>Hôtel particulier - Versailles - 2022</p>
+                        <p>Restauration de décors en staff et pose de nouvelles moulures</p>
+                    </div>
+                </div>
+                
+                <!-- Rénovation complète -->
+                <div class="portfolio-item" data-category="renovation">
+                    <img src="assets/images/chantier8.jpg" alt="Rénovation complète d'un appartement" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h4>Rénovation totale 3 pièces</h4>
+                        <p>Appartement 75m² - Boulogne-Billancourt - 2023</p>
+                        <p>Démolition, nouvelles cloisons, plafonds et finitions</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="renovation">
+                    <img src="assets/images/chantier7.jpg" alt="Transformation de combles" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h4>Aménagement de combles</h4>
+                        <p>Maison avec combles - Saint-Germain-en-Laye - 2022</p>
+                        <p>Création de 2 chambres et salle de bain dans les combles</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="plafonds">
+                    <img src="assets/images/chantier6.jpg" alt="Plafond à caissons décoratif" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h4>Plafond à caissons traditionnel</h4>
+                        <p>Salon de réception - Maison ancienne - 2022</p>
+                        <p>Réalisation d'un plafond à caissons en staff sur mesure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <img src="" alt="" class="modal-image" id="modalImage">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
