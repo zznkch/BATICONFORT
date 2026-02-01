@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baticonfort - Nos Réalisations en Plâtrerie</title>
+    <meta name="description" content="Découvrez nos réalisations en plâtrerie : cloisons, faux plafonds, enduits décoratifs, isolation et rénovations complètes.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <style>
+        .carousel-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 30px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .carousel-slide {
+            min-width: 100%;
+            position: relative;
+        }
+        
+        .carousel-slide img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 20px;
+            z-index: 10;
+        }
+        
+        .carousel-nav.prev {
+            left: 10px;
+        }
+        
+        .carousel-nav.next {
+            right: 10px;
+        }
+        
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            gap: 10px;
+        }
+        
+        .carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .carousel-dot.active {
+            background: #333;
+        }
+        
+        .carousel-section {
+            margin: 40px 0;
+        }
+        
+        .carousel-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.8rem;
+        }
+        
+        .portfolio-filters {
+            margin-bottom: 40px;
+        }
+        
+        .category-section {
+            margin: 60px 0;
+        }
+        
+        .subcategory-title {
+            margin: 30px 0 20px 0;
+            color: #555;
+            border-left: 4px solid #4CAF50;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation mise à jour avec toutes les pages -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.jpg" alt="Logo Baticonfort" class="logo-image">
+                <span class="logo-text">BATICONFORT</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+                <li><a href="realisations.html"><i class="fas fa-images"></i> Réalisations</a></li>
+                <li><a href="equipe.html"><i class="fas fa-users"></i> Équipe</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="certifications.html"><i class="fas fa-award"></i> Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Nos Réalisations</h1>
+            <p>Découvrez nos chantiers de plâtrerie et rénovation</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Galerie de Chantiers</h2>
+            <p class="section-subtitle">Plus de 100 chantiers réalisés avec expertise et passion</p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tous nos travaux</button>
+                <button class="filter-btn" data-filter="plafonds">Plafonds</button>
+                <button class="filter-btn" data-filter="enduits">Enduits & Décoration</button>
+                <button class="filter-btn" data-filter="renovation">Rénovation complète</button>
+            </div>
+            
+            <!-- Catégorie: Enduits & Décoration -->
+            <div class="category-section" id="enduits-category">
+                <h3 class="carousel-title">Enduits & Décoration</h3>
+                
+                <!-- Sous-catégorie: Enduit -->
+                <h4 class="subcategory-title">Enduit</h4>
+                
+                <!-- Carrousel 1 pour Enduit -->
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel" id="enduit-carousel-1">
+                            <!-- Diapositive 1 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/enduit/enduit (1).jpg" alt="Enduit lissé sur mur de séjour">
+                            </div>
+                            <!-- Diapositive 2 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/enduit/enduit (5).jpg" alt="Enduit lissé sur grande surface">
+                            </div>
+                            <!-- Diapositive 3 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/enduit/enduit (6).jpg" alt="Enduit préparatoire avant peinture">
+                            </div>
+                            <!-- Diapositive 4 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/enduit/enduit (7).jpg" alt="Enduit de lissage sur plafond">
+                            </div>
+                            <!-- Diapositive 5 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/enduit/enduit (8).jpg" alt="Enduit sur angle de mur">
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev" onclick="prevSlide('enduit-carousel-1')">❮</button>
+                        <button class="carousel-nav next" onclick="nextSlide('enduit-carousel-1')">❯</button>
+                        <div class="carousel-dots" id="dots-enduit-1"></div>
+                    </div>
+                </div>
+                
+                <!-- Carrousel 2 pour Enduit -->
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel" id="enduit-carousel-2">
+                            <!-- Diapositive 1 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/enduit/enduit (2).jpg" alt="Enduit décoratif avec effets de matière">
+                            </div>
+                            <!-- Diapositive 2 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/enduit/enduit (3).jpg" alt="Enduit sur mur courbe">
+                            </div>
+                            <!-- Diapositive 3 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/enduit/enduit (9).jpg" alt="Enduit décoratif avec texture">
+                            </div>
+                            <!-- Diapositive 4 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/enduit/enduit (10).jpg" alt="Enduit de rebouchage après électricité">
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev" onclick="prevSlide('enduit-carousel-2')">❮</button>
+                        <button class="carousel-nav next" onclick="nextSlide('enduit-carousel-2')">❯</button>
+                        <div class="carousel-dots" id="dots-enduit-2"></div>
+                    </div>
+                </div>
+                
+                <!-- Sous-catégorie: Décoration -->
+                <h4 class="subcategory-title">Décoration</h4>
+                
+                <!-- Carrousel 1 pour Décoration -->
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel" id="deco-carousel-1">
+                            <!-- Diapositive 1 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/décoration/déco (1).jpg" alt="Décoration murale avec éléments en staff">
+                            </div>
+                            <!-- Diapositive 2 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/décoration/déco (8).jpg" alt="Décoration de plafond avec motifs">
+                            </div>
+                            <!-- Diapositive 3 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/décoration/déco (9).jpg" alt="Décoration de salle de bain avec éléments muraux">
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev" onclick="prevSlide('deco-carousel-1')">❮</button>
+                        <button class="carousel-nav next" onclick="nextSlide('deco-carousel-1')">❯</button>
+                        <div class="carousel-dots" id="dots-deco-1"></div>
+                    </div>
+                </div>
+                
+                <!-- Carrousel 2 pour Décoration -->
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel" id="deco-carousel-2">
+                            <!-- Diapositive 1 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/décoration/déco (2).jpg" alt="Moulures et corniches décoratives">
+                            </div>
+                            <!-- Diapositive 2 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/décoration/déco (3).jpg" alt="Rosace centrale de plafond">
+                            </div>
+                            <!-- Diapositive 3 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/décoration/déco (4).jpg" alt="Décoration de cheminée en staff">
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev" onclick="prevSlide('deco-carousel-2')">❮</button>
+                        <button class="carousel-nav next" onclick="nextSlide('deco-carousel-2')">❯</button>
+                        <div class="carousel-dots" id="dots-deco-2"></div>
+                    </div>
+                </div>
+                
+                <!-- Carrousel 3 pour Décoration -->
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel" id="deco-carousel-3">
+                            <!-- Diapositive 1 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/décoration/déco (5).jpg" alt="Plafond avec moulures complexes">
+                            </div>
+                            <!-- Diapositive 2 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/décoration/déco (6).jpg" alt="Décoration de porte avec encadrement">
+                            </div>
+                            <!-- Diapositive 3 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/décoration/déco (7).jpg" alt="Décoration murale avec panneaux">
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev" onclick="prevSlide('deco-carousel-3')">❮</button>
+                        <button class="carousel-nav next" onclick="nextSlide('deco-carousel-3')">❯</button>
+                        <div class="carousel-dots" id="dots-deco-3"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Catégorie: Plafonds -->
+            <div class="category-section" id="plafonds-category">
+                <h3 class="carousel-title">Plafonds</h3>
+                
+                <!-- Carrousel 1 pour Plafonds -->
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel" id="plafond-carousel-1">
+                            <!-- Diapositive 1 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (1).jpg" alt="Plafond moderne avec éclairage intégré">
+                            </div>
+                            <!-- Diapositive 2 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (2).jpg" alt="Plafond en staff avec moulures">
+                            </div>
+                            <!-- Diapositive 3 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (3).jpg" alt="Plafond acoustique de bureau">
+                            </div>
+                            <!-- Diapositive 4 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (4).jpg" alt="Plafond décoratif avec structure moderne">
+                            </div>
+                            <!-- Diapositive 5 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (5).jpg" alt="Plafond à caissons traditionnel">
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev" onclick="prevSlide('plafond-carousel-1')">❮</button>
+                        <button class="carousel-nav next" onclick="nextSlide('plafond-carousel-1')">❯</button>
+                        <div class="carousel-dots" id="dots-plafond-1"></div>
+                    </div>
+                </div>
+                
+                <!-- Carrousel 2 pour Plafonds -->
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel" id="plafond-carousel-2">
+                            <!-- Diapositive 1 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (6).jpg" alt="Plafond bas avec éclairage indirect">
+                            </div>
+                            <!-- Diapositive 2 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (7).jpg" alt="Plafond avec structure complexe">
+                            </div>
+                            <!-- Diapositive 3 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (8).jpg" alt="Plafond classique avec rosace centrale">
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev" onclick="prevSlide('plafond-carousel-2')">❮</button>
+                        <button class="carousel-nav next" onclick="nextSlide('plafond-carousel-2')">❯</button>
+                        <div class="carousel-dots" id="dots-plafond-2"></div>
+                    </div>
+                </div>
+                
+                <!-- Carrousel 3 pour Plafonds -->
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel" id="plafond-carousel-3">
+                            <!-- Diapositive 1 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (9).jpg" alt="Plafond moderne avec spots encastrés">
+                            </div>
+                            <!-- Diapositive 2 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (10).jpg" alt="Plafond de salle de bain avec ventilation intégrée">
+                            </div>
+                            <!-- Diapositive 3 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (11).jpg" alt="Plafond avec poutres apparentes">
+                            </div>
+                            <!-- Diapositive 4 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (12).jpg" alt="Plafond de couloir avec éclairage linéaire">
+                            </div>
+                            <!-- Diapositive 5 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (13).jpg" alt="Plafond de chambre avec éclairage doux">
+                            </div>
+                            <!-- Diapositive 6 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (14).jpg" alt="Plafond de bureau avec acoustique renforcée">
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev" onclick="prevSlide('plafond-carousel-3')">❮</button>
+                        <button class="carousel-nav next" onclick="nextSlide('plafond-carousel-3')">❯</button>
+                        <div class="carousel-dots" id="dots-plafond-3"></div>
+                    </div>
+                </div>
+                
+                <!-- Carrousel 4 pour Plafonds -->
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel" id="plafond-carousel-4">
+                            <!-- Diapositive 1 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (15).jpg" alt="Plafond avec ouverture pour verrière">
+                            </div>
+                            <!-- Diapositive 2 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (16).jpg" alt="Plafond de séjour avec structure originale">
+                            </div>
+                            <!-- Diapositive 3 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/plafond/plafond (17).jpg" alt="Plafond de restaurant avec ambiance chaleureuse">
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev" onclick="prevSlide('plafond-carousel-4')">❮</button>
+                        <button class="carousel-nav next" onclick="nextSlide('plafond-carousel-4')">❯</button>
+                        <div class="carousel-dots" id="dots-plafond-4"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Catégorie: Rénovation complète -->
+            <div class="category-section" id="renovation-category">
+                <h3 class="carousel-title">Rénovation complète</h3>
+                
+                <!-- Carrousel pour Rénovation -->
+                <div class="carousel-section">
+                    <div class="carousel-container">
+                        <div class="carousel" id="renovation-carousel">
+                            <!-- Diapositive 1 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/renovation/renovation (1).jpg" alt="Rénovation complète d'appartement avant/après">
+                            </div>
+                            <!-- Diapositive 2 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/renovation/renovation (2).jpg" alt="Rénovation de maison individuelle">
+                            </div>
+                            <!-- Diapositive 3 -->
+                            <div class="carousel-slide">
+                                <img src="assets/images/photo/renovation/renovation (3).jpg" alt="Rénovation de commerce">
+                            </div>
+                        </div>
+                        <button class="carousel-nav prev" onclick="prevSlide('renovation-carousel')">❮</button>
+                        <button class="carousel-nav next" onclick="nextSlide('renovation-carousel')">❯</button>
+                        <div class="carousel-dots" id="dots-renovation"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <img src="" alt="" class="modal-image" id="modalImage">
+        </div>
+    </div>
+
+    <script>
+        // Initialisation des carrousels
+        document.addEventListener('DOMContentLoaded', function() {
+            initCarousel('enduit-carousel-1', 'dots-enduit-1');
+            initCarousel('enduit-carousel-2', 'dots-enduit-2');
+            initCarousel('deco-carousel-1', 'dots-deco-1');
+            initCarousel('deco-carousel-2', 'dots-deco-2');
+            initCarousel('deco-carousel-3', 'dots-deco-3');
+            initCarousel('plafond-carousel-1', 'dots-plafond-1');
+            initCarousel('plafond-carousel-2', 'dots-plafond-2');
+            initCarousel('plafond-carousel-3', 'dots-plafond-3');
+            initCarousel('plafond-carousel-4', 'dots-plafond-4');
+            initCarousel('renovation-carousel', 'dots-renovation');
+            
+            // Filtrage des catégories
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const categories = document.querySelectorAll('.category-section');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Mise à jour des boutons actifs
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Affichage des catégories
+                    if (filter === 'all') {
+                        categories.forEach(cat => cat.style.display = 'block');
+                    } else {
+                        categories.forEach(cat => {
+                            if (cat.id === `${filter}-category`) {
+                                cat.style.display = 'block';
+                            } else {
+                                cat.style.display = 'none';
+                            }
+                        });
+                    }
+                });
+            });
+        });
+        
+        function initCarousel(carouselId, dotsId) {
+            const carousel = document.getElementById(carouselId);
+            const slides = carousel.querySelectorAll('.carousel-slide');
+            const dotsContainer = document.getElementById(dotsId);
+            
+            // Création des points indicateurs
+            slides.forEach((slide, index) => {
+                const dot = document.createElement('button');
+                dot.classList.add('carousel-dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(carouselId, index));
+                dotsContainer.appendChild(dot);
+            });
+            
+            // Initialisation
+            updateCarousel(carouselId);
+        }
+        
+        let currentSlideIndex = {};
+        
+        function updateCarousel(carouselId) {
+            if (!currentSlideIndex[carouselId]) {
+                currentSlideIndex[carouselId] = 0;
+            }
+            
+            const carousel = document.getElementById(carouselId);
+            const slides = carousel.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll(`#dots-${carouselId.split('-')[0]}-${carouselId.split('-')[2]} .carousel-dot`);
+            
+            // Mise à jour de la position
+            carousel.style.transform = `translateX(-${currentSlideIndex[carouselId] * 100}%)`;
+            
+            // Mise à jour des points
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlideIndex[carouselId]);
+            });
+        }
+        
+        function nextSlide(carouselId) {
+            const carousel = document.getElementById(carouselId);
+            const slides = carousel.querySelectorAll('.carousel-slide');
+            
+            if (!currentSlideIndex[carouselId]) {
+                currentSlideIndex[carouselId] = 0;
+            }
+            
+            currentSlideIndex[carouselId] = (currentSlideIndex[carouselId] + 1) % slides.length;
+            updateCarousel(carouselId);
+        }
+        
+        function prevSlide(carouselId) {
+            const carousel = document.getElementById(carouselId);
+            const slides = carousel.querySelectorAll('.carousel-slide');
+            
+            if (!currentSlideIndex[carouselId]) {
+                currentSlideIndex[carouselId] = 0;
+            }
+            
+            currentSlideIndex[carouselId] = (currentSlideIndex[carouselId] - 1 + slides.length) % slides.length;
+            updateCarousel(carouselId);
+        }
+        
+        function goToSlide(carouselId, index) {
+            currentSlideIndex[carouselId] = index;
+            updateCarousel(carouselId);
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

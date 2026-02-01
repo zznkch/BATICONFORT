@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATICONFORT - Contact & Devis Plâtrerie Moselle</title>
+    <meta name="description" content="Contactez BATICONFORT à Morsbach (57600) pour vos travaux de plâtrerie. Devis gratuit en Moselle et Grand Est. Tél: 07 71 61 46 57">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation mise à jour avec toutes les pages -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.jpg" alt="Logo Baticonfort" class="logo-image">
+            <span class="logo-text">BATICONFORT</span>
+        </a>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="services.html"><i class="fas fa-tools"></i> Services</a></li>
+            <li><a href="realisations.html"><i class="fas fa-images"></i> Réalisations</a></li>
+            <li><a href="equipe.html"><i class="fas fa-users"></i> Équipe</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="certifications.html"><i class="fas fa-award"></i> Certifications</a></li>
+        </ul>
+    </div>
+</nav>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact & Devis</h1>
+            <p>Demandez votre devis gratuit pour vos travaux de plâtrerie</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Nos Coordonnées</h3>
+                    
+                    <div class="contact-icons-grid">
+                        <a href="tel:+33771614657" class="contact-icon-card">
+                            <div class="icon-circle">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h4>Téléphone</h4>
+                            <p>07 71 61 46 57</p>
+                            <span class="icon-subtitle">Appelez-nous du lundi au samedi</span>
+                        </a>
+                        
+                        <a href="mailto:bati_confort@outlook.fr" class="contact-icon-card">
+                            <div class="icon-circle">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>Email</h4>
+                            <p>bati_confort@outlook.fr</p>
+                            <span class="icon-subtitle">Réponse sous 24h</span>
+                        </a>
+                        
+                        <div class="contact-icon-card">
+                            <div class="icon-circle">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Adresse</h4>
+                            <p>15 rue Saint-Louis</p>
+                            <p>57600 Morsbach</p>
+                            <span class="icon-subtitle">Siège social</span>
+                        </div>
+                        
+                        <div class="contact-icon-card">
+                            <div class="icon-circle">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h4>Gérant</h4>
+                            <p>Abdelouhad BENTALIB</p>
+                            <span class="icon-subtitle">Artisan plâtrier depuis 2017</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Carte Google Maps -->
+                    <div class="map-container">
+                        <h4>Notre localisation</h4>
+                        <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2596.548651917903!2d6.870177576950109!3d49.39932237134848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4795c59c15b4c4d5%3A0x253f73264d520639!2s15%20Rue%20Saint-Louis%2C%2057600%20Morsbach%2C%20France!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulaire de contact -->
+                <div class="contact-form-container">
+                    <h3>Demande de devis gratuit</h3>
+                    <p>Remplissez ce formulaire pour obtenir un devis personnalisé</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Téléphone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Ville *</label>
+                                <input type="text" id="city" name="city" required placeholder="Ex: Morsbach, Forbach...">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Type de travaux *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Sélectionnez un service</option>
+                                <option value="cloisons">Cloisons & Placoplâtre</option>
+                                <option value="plafonds">Faux plafonds</option>
+                                <option value="enduits">Enduits & Finitions</option>
+                                <option value="isolation">Isolation thermique/phonique</option>
+                                <option value="renovation">Rénovation complète</option>
+                                <option value="staff">Décoration staff</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Description de votre projet *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Décrivez votre projet en détail..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Surface à traiter (approximative)</label>
+                            <div class="surface-options">
+                                <label><input type="radio" name="surface" value="<50"> Moins de 50m²</label>
+                                <label><input type="radio" name="surface" value="50-100"> 50-100m²</label>
+                                <label><input type="radio" name="surface" value="100-200"> 100-200m²</label>
+                                <label><input type="radio" name="surface" value=">200"> Plus de 200m²</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group consent">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">J'accepte que mes données soient utilisées pour traiter ma demande (conformément au RGPD)</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-envelope"></i>Envoyer ma demande de devis</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Informations légales complètes -->
+            <div class="legal-info">
+                <h3>Informations Légales</h3>
+                <div class="legal-grid">
+                    <div class="legal-item">
+                        <i class="fas fa-id-card"></i>
+                        <h4>SIREN / SIRET</h4>
+                        <p>SIREN 977 712 231</p>
+                        <p>SIRET 977 712 231 00025</p>
+                    </div>
+                    
+                    <div class="legal-item">
+                        <i class="fas fa-balance-scale"></i>
+                        <h4>TVA Intracommunautaire</h4>
+                        <p>FR71 977 712 231</p>
+                    </div>
+                    
+                    <div class="legal-item">
+                        <i class="fas fa-building"></i>
+                        <h4>Forme juridique</h4>
+                        <p>SARL au capital de 2 000 €</p>
+                        <p>Créée en 2023</p>
+                    </div>
+                    
+                    <div class="legal-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Assurances</h4>
+                        <p>Assurance décennale</p>
+                        <p>Responsabilité civile professionnelle</p>
+                    </div>
+                    
+                    <div class="legal-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Siège social</h4>
+                        <p>15 rue Saint-Louis</p>
+                        <p>57600 Morsbach</p>
+                    </div>
+                    
+                    <div class="legal-item">
+                        <i class="fas fa-user-tie"></i>
+                        <h4>Gérant</h4>
+                        <p>Abdelouhad BENTALIB</p>
+                    </div>
+                    
+                    <div class="legal-item">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Certification</h4>
+                        <p>RGE - Reconnu Garant de l'Environnement</p>
+                    </div>
+                    
+                    <div class="legal-item">
+                        <i class="fas fa-file-contract"></i>
+                        <h4>Mentions Légales</h4>
+                        <p><a href="mentions-legales.html">Consultez nos mentions légales</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
